@@ -29,9 +29,16 @@
 html,
 body {
     height: 100%;
-    color: #333333;
+    color: #4c4f54;
     font-family: 'MyriadPro', arial, serif;
     background: #fafdfe;
+}
+a{
+    color: #4c4f54;
+}
+a:hover{
+    text-decoration: none;
+    color: #609aff;
 }
 .wrapper {
     display: flex;
@@ -44,11 +51,30 @@ body {
 .footer {
     flex: 0 0 auto;
 }
-.animaite{
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+.logo{
+    display: flex;
+    height: 100%;
+}
+.logo img{
+	max-width: 100%;
+}
+.header{
+	padding: 0.5rem 0;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+#navbarNav{
+	justify-content: end;
+}
+.profile-small > div{
+    display: flex;
+}
+.profile-small{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.profile-small-img{
+    margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 575px){
