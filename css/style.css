@@ -31,7 +31,7 @@ body {
     height: 100%;
     color: #4c4f54;
     font-family: 'MyriadPro', arial, serif;
-    background: #fafdfe;
+    background: #f7f7fa;
 }
 a{
     color: #4c4f54;
@@ -61,6 +61,11 @@ a:hover{
 .header{
 	padding: 0.5rem 0;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 2rem;
 }
 #navbarNav{
 	justify-content: end;
@@ -76,6 +81,223 @@ a:hover{
 .profile-small-img{
     margin-left: 0.5rem;
 }
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon/icomoon.eot?ua2lni');
+    src:  url('fonts/icomoon/icomoon.eot?ua2lni#iefix') format('embedded-opentype'),
+    url('fonts/icomoon/icomoon.ttf?ua2lni') format('truetype'),
+    url('fonts/icomoon/icomoon.woff?ua2lni') format('woff'),
+    url('fonts/icomoon/icomoon.svg?ua2lni#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    display: inline-block;
+    width: 1.5rem;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check .path1:before {
+    content: "\e900";
+    color: rgb(116, 162, 214);
+}
+.icon-check .path2:before {
+    content: "\e901";
+    margin-left: -0.998046875em;
+    color: rgb(116, 162, 214);
+}
+.icon-check .path3:before {
+    content: "\e902";
+    margin-left: -0.998046875em;
+    color: rgb(116, 162, 214);
+}
+.icon-check .path4:before {
+    content: "\e903";
+    margin-left: -0.998046875em;
+    color: rgb(116, 162, 214);
+}
+.icon-check .path5:before {
+    content: "\e904";
+    margin-left: -0.998046875em;
+    color: rgb(255, 255, 255);
+}
+.icon-check .path6:before {
+    content: "\e905";
+    margin-left: -0.998046875em;
+    color: rgb(255, 255, 255);
+}
+.icon-news:before {
+    content: "\e906";
+}
+.icon-photo:before {
+    content: "\e907";
+}
+.icon-groups:before {
+    content: "\e908";
+}
+.icon-games:before {
+    content: "\e909";
+}
+.icon-messages:before {
+    content: "\e90a";
+}
+.icon-home:before {
+    content: "\e90b";
+}
+.active-link{
+    color: #609aff;
+}
+.auth-form{
+    text-align: center;
+}
+.auth-form input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #5f9bff;
+    display: block;
+    padding-left: 0.5rem;
+}
+.btn-gp{
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: -moz-linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
+    background: -webkit-linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
+    background: linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
+    cursor: pointer;
+}
+.game, .filter, .news-block{
+    width: 100%;
+    height: 190px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+	margin-bottom: 1rem;
+}
+.filter, .news-block{
+    height: auto;
+}
+.org{
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+.org-img{
+    margin-right: 0.5rem;
+}
+.sport-type{
+    height: 46px;
+    line-height: 46px;
+    text-align: right;
+}
+.info-r{
+    text-align: right;
+}
+.btn-game{
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #4c4f54;
+}
+.btn-game:hover{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+.time{
+    display: inline-block;
+    font-size: 2rem;
+}
+.date{
+    display: inline-block;
+}
+.filter-name{
+    width: 4rem;
+    display: inline-block;
+}
+.zaglushka{
+	background: url("../images/zaglushka.png");
+}
+.zagl-data{
+	text-align: center;
+}
+.zagl-data p{
+	display: block;
+	color: white;
+}
+.zagl-data a{
+	color: white;
+}
+.zagl-data a:hover{
+	text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+.author-img, .autor-data{
+	display: inline-block;
+	height: 50px;
+}
+.news-one{
+	padding-bottom: 1rem;
+}
+.news-date{
+	font-size: 0.75rem;
+}
+.author-img img{
+	margin-top: -21px;
+}
+.news-block-content{
+	font-size: 0.75rem;
+}
+.news-one a{
+	font-style: italic;
+	text-decoration: underline;
+	float: right;
+}
+.news-block > a{
+	text-decoration: underline;
+}
+.footer_bg{
+	background-color: #20282c;
+	color: #ffffff;
+	padding: 1rem 0;
+}
+.footer-nav a, .footer-text a{
+	margin-right: 1rem;
+	color: white;
+	font-size: 1.25rem;
+}
+.footer-text a{
+	font-size: 1rem;
+	text-decoration: underline;
+}
+.footer-nav a:hover{
+	text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+
+}
+.footer-nav{
+	padding-top: 1rem;
+
+}
+
+
+
 
 @media screen and (min-width: 575px){
 }
