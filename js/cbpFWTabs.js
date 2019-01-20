@@ -1,4 +1,4 @@
-;( function( window ) {
+( function( window ) {
 	'use strict';
 	function extend( a, b ) {
 		for( var key in b ) { 
@@ -49,4 +49,8 @@
 	};
 	// add to global namespace
 	window.CBPFWTabs = CBPFWTabs;
+
+    [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+        new CBPFWTabs( el );
+    });
 })( window );
