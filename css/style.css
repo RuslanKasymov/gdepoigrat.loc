@@ -156,8 +156,26 @@ a:hover{
 .icon-home:before {
     content: "\e90b";
 }
+.icon-chevron-down:before {
+    content: "\e90e";
+}
+.icon-chevron-up:before {
+    content: "\e90c";
+}
+.icon-pencil:before {
+    content: "\e90d";
+}
+.icon-plus:before {
+    content: "\ea0a";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
 .active-link{
     color: #609aff;
+}
+.icon-pencil{
+    float: right;
 }
 .auth-form{
     text-align: center;
@@ -333,7 +351,6 @@ font-size: 1rem;
 /* tabs profile*/
 .tabs {
     position: relative;
-    overflow: hidden;
     margin: 0 auto;
     width: 100%;
     font-weight: 300;
@@ -419,8 +436,22 @@ font-size: 1rem;
     color: #6e79ff;
 }
 /*END tabs profile*/
-
-
+.game-one{
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+.game-id{
+    color: #909090;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+.game-inf{
+    margin: 0 0.5rem;
+}
 @media screen and (min-width: 575px){
 }
 @media screen and (max-width: 1200px){
