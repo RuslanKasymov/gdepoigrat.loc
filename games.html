@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
-	<link rel="stylesheet" type="text/css" href="css/tabs.css" />
-	<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
 </head>
 <body>
 <div class="wrapper">
@@ -52,7 +50,7 @@
 							<div class="profile-small-name">Руслан</div>
 							<div class="profile-small-img"><img src="images/simple_img.png" alt=""></div>
 						</div>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -116px, 0px);">
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0; left: 0; transform: translate3d(0px, -116px, 0px);">
 							<a class="dropdown-item" href="#">Профиль</a>
 							<a class="dropdown-item" href="#">Редактировать</a>
 							<a class="dropdown-item" href="#">Помощь</a>
@@ -128,7 +126,33 @@
 										<span class="game-num-human">12/25</span><span class="icon-pencil" data-toggle="collapse" data-target="#gameOne" aria-expanded="true" aria-controls="gameOne"></span>
 										<div id="gameOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<div class="game-edit-block">
+													<div class="form">
+														<div class="row">
+															<label for="select-type-sport"  class="col-12">Вид спорта
+																<select class="form-control" id="select-type-sport">
+																	<option value="0">Футбол</option>
+																	<option value="1">Футзал</option>
+																	<option value="2">Баскетбол</option>
+																	<option value="3">Волейбол</option>
+																	<option value="4">П.Волейбол</option>
+																</select>
+															</label>
+															<label for="number-humans" class="col-6 col-form-label">Количество человек <input class="form-control" type="number" value="25" id="number-humans"></label>
+															<label for="price-use" class="col-6 col-form-label">Цена посещения <input class="form-control" type="number" value="350" id="price-use"><span class="subinput-text">Введите 0, если посещение бесплатно</span></label>
+															<label for="date-game" class="col-6 col-form-label">Дата игры
+																<input class="form-control" id="date-game" type="date" min="2019-01-22" value="2019-02-01">
+															</label>
+															<label for="time-game" class="col-6 col-form-label">Время игры
+																<input class="form-control" id="time-game" type="time" value="18:00">
+															</label>
+															<label for="comment-game" class="col-12">Комментарий к игре
+																<textarea name="comment-game" id="comment-game" class="form-control" rows="3"></textarea>
+															</label>
+															<div class="col-auto"><button class="btn-gp">Сохранить</button></div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -143,10 +167,6 @@
 										</div>
 									</div>
 								</div>
-
-
-
-
 							</section>
 							<section id="section-linemove-2"><p>2</p></section>
 							<section id="section-linemove-3"><p>3</p></section>
