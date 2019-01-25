@@ -188,16 +188,29 @@ a:hover{
     display: block;
     padding-left: 0.5rem;
 }
-.btn-gp{
+.btn-gp, .add-group-btn{
     color: white;
-    width: 200px;
-    height: 50px;
     border: none;
     border-radius: 5px;
     background: -moz-linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
     background: -webkit-linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
     background: linear-gradient(45deg, #6e79ff 0%, #5f9bff 100%);
     cursor: pointer;
+}
+.btn-gp{
+    width: 200px;
+    height: 50px;
+}
+.add-group-btn{
+    width: 110px;
+    height: 30px;
+    float: right;
+    font-size: 1rem;
+    line-height: 30px;
+    margin-top: 9px;
+}
+.add-group-btn .icon-plus{
+    line-height: 30px;
 }
 .game, .filter, .news-block{
     width: 100%;
@@ -354,7 +367,6 @@ font-size: 1rem;
     margin: 0 auto;
     width: 100%;
     font-weight: 300;
-    font-size: 1.25em;
 }
 .tabs nav {
     text-align: center;
@@ -455,6 +467,34 @@ font-size: 1rem;
 .subinput-text{
     font-size: 0.8rem;
     color: #909090;
+}
+.group-users-list{
+    max-height: 8rem;
+    overflow-y: scroll;
+    border-radius: 5px;
+    border: 1px solid #a2a2a2;
+}
+.groups-block .game-one{ /*Исправить*/
+    padding: 0;
+}
+.game-head{
+    padding: 0.5rem;
+}
+.groups-block .game-inf{
+    padding: 0 0.5rem;
+}
+.groups-block .icon-chevron-down{
+    float: right;
+}
+.user-in-group{
+    padding: 0.5rem;
+
+}
+.user-in-group:hover{
+    background: #e1e5eb;
+}
+.group-user-action-btn{
+    float: right;
 }
 @media screen and (min-width: 575px){
 }
