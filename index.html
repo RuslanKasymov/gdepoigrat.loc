@@ -17,15 +17,28 @@
 		<div class="container-fluid header">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-6 col-sm-3">
 						<div class="logo">
 							<img src="images/logo.svg" alt="где поиграть">
 						</div>
 					</div>
-					<div class="col-md-7">
-						<nav class="navbar navbar-expand-lg">
+					<div class="col-6 col-sm-4 col-md-2 order-sm-last">
+						<div class="profile-small dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="profile-small-name">Руслан</div>
+							<div class="profile-small-img"><img src="images/simple_img.png" alt=""></div>
+						</div>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -116px, 0px);">
+							<a class="dropdown-item" href="#">Профиль</a>
+							<a class="dropdown-item" href="#">Редактировать</a>
+							<a class="dropdown-item" href="#">Помощь</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Выйти</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-5 col-md-7">
+						<nav class="navbar navbar-expand-md justify-content-center">
 							<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon "></span>
+								<span class="navbar-toggler-icon "></span> Меню сайта
 							</button>
 							<div class="collapse navbar-collapse" id="navbarNav">
 								<ul class="navbar-nav" id="menu">
@@ -45,29 +58,16 @@
 							</div>
 						</nav>
 					</div>
-					<div class="col-md-2">
-						<div class="profile-small dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<div class="profile-small-name">Руслан</div>
-							<div class="profile-small-img"><img src="images/simple_img.png" alt=""></div>
-						</div>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -116px, 0px);">
-							<a class="dropdown-item" href="#">Профиль</a>
-							<a class="dropdown-item" href="#">Редактировать</a>
-							<a class="dropdown-item" href="#">Помощь</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Выйти</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-6 col-md-3">
 					<div class="menu">
-						<nav class="navbar navbar-expand-lg">
-							<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon "></span>
+						<nav class="navbar navbar-expand-md">
+							<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#leftBar" aria-controls="leftBar" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon "></span> Меню профиля
 							</button>
 							<div class="collapse navbar-collapse" id="leftBar">
 								<ul class="navbar-nav flex-column" id="leftsidebar">
@@ -93,21 +93,82 @@
 							</div>
 						</nav>
 					</div>
-					<div class="auth-form">
-						<form action="">
-							<span class="active-link">Авторизация</span> | <a href="#">Регистрация</a>
-							<label>
-								<input type="text" name="num" id="num" placeholder="Номер">
-							</label>
-							<label>
-								<input type="password" name="pass" id="pass" placeholder="Пароль">
-							</label>
-							<button class="btn-gp">Войти</button>
-							<a href="#">Забыли пароль?</a>
-						</form>
+					<!--<div class="auth-form">-->
+						<!--<form action="">-->
+							<!--<a href="#">Регистрация</a> <span class="d-lg-block d-none">|</span> <span class="active-link">Авторизация</span>-->
+							<!--<label>-->
+								<!--<input type="text" name="num" id="num" placeholder="Номер">-->
+							<!--</label>-->
+							<!--<label>-->
+								<!--<input type="password" name="pass" id="pass" placeholder="Пароль">-->
+							<!--</label>-->
+							<!--<button class="btn-gp">Войти</button>-->
+							<!--<a href="#">Забыли пароль?</a>-->
+						<!--</form>-->
+					<!--</div>-->
+				</div>
+				<div class="col-6 col-md-3 order-md-last">
+
+					<div class="filter-main">
+
+						<nav class="navbar-expand-md">
+							<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#filter" aria-controls="filter" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="icon-equalizer"></span> Фильтр
+							</button>
+							<div class="collapse navbar-collapse flex-wrap" id="filter">
+								<div class="title">Фильтр</div>
+
+								<div class="filter">
+									<div class="city"><div class="filter-name">Город:</div>Москва</div>
+									<div class="sport-type-f"><div class="filter-name">Вид:</div>Все</div>
+									<div class="org-f">Только организаторы:
+										<input type="checkbox" name="" id=""></div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="title d-md-block d-none">Новости</div>
+
+					<div class="news-block">
+						<div class="news-one">
+							<div class="author-img">
+								<img src="images/simple_img.png" alt="">
+							</div>
+							<div class="autor-data">
+								<div class="name">Руслан</div>
+								<div class="news-date">24.08.19</div>
+							</div>
+							<div class="news-block-title">
+								Изменение в расписании игр!
+							</div>
+							<div class="news-block-content">
+								Со следующего месяца уличные игры будут
+								проводиться еженедельно в...
+							</div>
+							<a href="#">читать далее</a>
+						</div>
+						<hr>
+						<div class="news-one">
+							<div class="author-img">
+								<img src="images/simple_img.png" alt="">
+							</div>
+							<div class="autor-data">
+								<div class="name">Руслан</div>
+								<div class="news-date">24.08.19</div>
+							</div>
+							<div class="news-block-title">
+								Изменение в расписании игр!
+							</div>
+							<div class="news-block-content">
+								Со следующего месяца уличные игры будут
+								проводиться еженедельно в...
+							</div>
+							<a href="#">читать далее</a>
+						</div>
+						<a href="#">Все новости</a>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<div class="title">Игры</div>
 					<div class="game">
 						<div class="row">
@@ -148,66 +209,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
-					<div class="title">Фильтр</div>
-					<div class="filter">
-						<div class="city"><div class="filter-name">Город:</div>Москва</div>
-						<div class="sport-type-f"><div class="filter-name">Вид:</div>Все</div>
-						<div class="org-f">Только организаторы:
-							<input type="checkbox" name="" id=""></div>
-					</div>
-					<div class="title">Новости</div>
-					<div class="news-block">
-						<div class="news-one">
-							<div class="author-img">
-								<img src="images/simple_img.png" alt="">
-							</div>
-							<div class="autor-data">
-								<div class="name">Руслан</div>
-								<div class="news-date">24.08.19</div>
-							</div>
-							<div class="news-block-title">
-								Изменение в расписании игр!
-							</div>
-							<div class="news-block-content">
-								Со следующего месяца уличные игры будут
-								проводиться еженедельно в...
-							</div>
-							<a href="#">читать далее</a>
-						</div>
-						<hr>
-						<div class="news-one">
-							<div class="author-img">
-								<img src="images/simple_img.png" alt="">
-							</div>
-							<div class="autor-data">
-								<div class="name">Руслан</div>
-								<div class="news-date">24.08.19</div>
-							</div>
-							<div class="news-block-title">
-								Изменение в расписании игр!
-							</div>
-							<div class="news-block-content">
-								Со следующего месяца уличные игры будут
-								проводиться еженедельно в...
-							</div>
-							<a href="#">читать далее</a>
-						</div>
-						<a href="#">Все новости</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
 	<footer class="footer_bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
-					<div class="logo">
+				<div class="col-12 col-md-4">
+					<div class="logo justify-content-center">
 						<img src="images/logo.svg" alt="где поиграть">
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<div class="footer-data">
 						<div class="footer-nav">
 							<a href="" class="animate">Игрокам</a><a href="" class="animate">Организаторам</a><a href="" class="animate">О сайте</a>

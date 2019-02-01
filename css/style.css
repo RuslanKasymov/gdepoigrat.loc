@@ -171,6 +171,12 @@ a:hover{
 .icon-cross:before {
     content: "\ea0f";
 }
+.icon-equalizer:before {
+    content: "\e992";
+    color: #4c4f54;
+    font-size: 1.5rem;
+    vertical-align: sub;
+}
 .active-link{
     color: #609aff;
 }
@@ -502,10 +508,41 @@ font-size: 1rem;
    
 }
 @media screen and (max-width: 992px){
-  
+    #menu{
+        font-size: 0.95rem;
+    }
+    #leftsidebar{
+        font-size: 0.8rem;
+    }
+    .auth-form input {
+        width: 100%;
+    }
+    .btn-gp {
+        width: 100%;
+    }
+    .game{
+        height: auto;
+    }
+
 }
 @media screen and (max-width: 768px){
-   
+    .news-block{
+        display: none;
+    }
+    .filter-main{
+        padding: 0.7rem;
+        color: #4c4f54;
+    }
+    .navbar-toggler{
+        color: #4c4f54;
+    }
+    .footer_bg .logo img{
+        max-width: 70%;
+    }
+    .footer_bg{
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 575px){
     
@@ -513,11 +550,18 @@ font-size: 1rem;
 @media screen and (max-width: 500px){
    
 }
-@media screen and (max-width: 460px){
-    
+@media screen and (max-width: 480px){
+    .menu .navbar-toggler, .filter-main .navbar-toggler, .title{
+        font-size: 1rem;
+    }
+    .filter-main{
+        padding: 0.4rem;
+    }
 }
-@media screen and (max-width: 320px){
-    
+@media screen and (max-width: 360px){
+    .footer-data a{
+        display: block;
+    }
 }
 
 .animate:hover {/*Не работает*/
